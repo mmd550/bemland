@@ -362,6 +362,13 @@ and (max-width: 1279px){
     :root {
         --swiper-navigation-size: 30px;
     }
+       div.brand-subtitle p{
+        font-size: 1.2em;
+        opacity:0;
+        line-height: 30px;
+        max-width: 100%;
+        /*transition:opacity .5s ease-out;*/
+    }
     .swiper2{
         width:100%;
     }
