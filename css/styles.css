@@ -371,7 +371,7 @@ and (max-width: 1279px){
         --swiper-navigation-size: 30px;
     }
     .swiper1 {
-        width:98%;
+        width:100%;
         background-color: transparent;
     }
     div.brand-subtitle p{
