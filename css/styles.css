@@ -1,0 +1,386 @@
+@import url(normalize.css);
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan.eot) format('eot'),
+    url(../fonts/BYekan.woff) format('woff'),
+    url(../fonts/BYekan.ttf) format('truetype');
+}
+body{
+   position: relative;
+    direction: rtl;
+    background-color: #F5F5F5;
+    font-size:16px;
+    font-family: BYekan;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+.main{
+    width:100%;
+    max-width:1680px;
+    margin:auto;
+}
+.clear{
+    clear: both;
+}
+img{
+    width:100%;
+    object-fit: cover;
+    height: 100%;
+}
+:root {
+    --swiper-navigation-size: 30px;
+}
+h1{
+    display: inline-block;
+    color:black;
+    font-size: 2em;
+    line-height: 50px;
+}
+
+h2{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding:24px;
+}
+footer{
+    background-color: #010306;
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+}
+/*------------------------------------------------------------navigation---------------------------------------------------------------------------------------*/
+nav{
+    background-color: rgba(1,3,6,0.8);
+    position:fixed;
+    top:0;
+    z-index: 9999;
+    width:100%;
+}
+ul.bar{
+    height: 45px;
+    position: relative;
+
+}
+div.extra{
+    height:45px;
+    background-color: #010306;
+}
+li.bar:first-child{
+    display: inline-block;
+    margin-right: 2.5%;
+    cursor: pointer;
+    margin-top: 6px;
+}
+li.bar{
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 3px;
+    padding-right: 0.7%;
+    padding-left: 0.7%;
+    position: relative;
+}
+li.bar::after{
+    background-color: #79B9B9;
+    content: '';
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 0;
+    height: 2px;
+    transition: width 400ms;
+}
+li.bar:hover::after{
+    width: 100%;
+}
+
+
+.mainLogo{
+    position: absolute;
+    top: 6px;
+    left: 3%;
+}
+/*------------------------------------------------------homepage slider--------------------------------------------------------------------------------------------------*/
+div.slider-container{
+    margin-top:0;
+    box-sizing: border-box;
+    border-top:0.2vh solid transparent;
+}
+.swiper1 {
+    width:100%;
+    background-color: #334746;
+}
+
+.swiper-pagination-bullet{
+    background-color: white;
+    width:10px;
+    height:10px;
+}
+.swiper-button-next1,.swiper-button-prev1{
+    color:white;
+    transition: right 200ms, left 200ms;
+
+}
+.swiper-button-prev1:hover{
+    right:5px;
+}
+.swiper-button-next1:hover{
+    left:5px;
+}
+/*------------------------------------------------------!*headline*!--------------------------------------------------------------------------------------------------*/
+.headline::before{
+    background: #010306;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-bottom:0;
+    margin-top: 0;
+    position: relative;
+    width: 60px;
+}
+.headline-wrapper{
+    margin-right: 10%;
+    max-width: 80%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.headline-wrapper p{
+    font-size:1.2em;
+    line-height: 30px;
+    max-width: 70%;
+}
+/*------------------------------------------------------!*parts*!--------------------------------------------------------------------------------------------------*/
+ul.parts{
+    display: block;
+    margin-top: 1vh;
+}
+ul.parts>li{
+    display: list-item;
+    float:right;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    overflow: hidden;
+    position: relative;
+}
+div.brand-subtitle{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:40px;
+    position:absolute;
+    bottom:2px;
+    color: white;
+    overflow: hidden;
+    transition: height 1000ms, background-color 1000ms;
+    padding-right: 10px;
+}
+div.brand-subtitle p{
+    font-size: 1.2em;
+    opacity:0;
+    line-height: 30px;
+    max-width: 400px;
+    /*transition:opacity .5s ease-out;*/
+}
+/*ul.parts>li:hover div.brand-subtitle p{*/
+/*    opacity: 100%;*/
+/*}*/
+ul.parts>li:hover div.brand-subtitle{
+    height:105px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+div.brand-subtitle span{
+    font-size: 1.7em;
+    line-height: 40px;
+}
+
+
+
+/*------------------------------------------------------discount slider--------------------------------------------------------------------------------------------------*/
+div.background{
+    height: 280px;
+    background-color: #D22131;
+    margin-top: 40px;
+}
+.swiper2{
+    width:90%;
+}
+.swiper2 .swiper-slide li{
+    width:85%;
+    display: block;
+    margin: auto;
+    padding-top: 10px ;
+}
+.swiper2 .swiper-slide {
+    text-align: right;
+    font-size: 1.2em;
+    background: #fff;
+    border-radius: 3%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: center;
+    justify-content: right;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.product-price{
+    float:left;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.swiper-slide p{
+    line-height: 30px;
+
+}
+.swiper-slide span{
+    margin-right:10px;
+    margin-left: 0;
+}
+.discount-percent{
+    background-color: red;
+    border-radius:45%;
+    text-align: center;
+    color: white;
+    padding: 4px 8px 4px 8px;
+}
+.previous-price{
+    text-decoration: line-through;
+    opacity: 60%;
+    font-size: 0.9em;
+}
+.unit{
+    font-size: 0.9em;
+    padding-right:8px ;
+}
+.swiper-button-next2,.swiper-button-prev2{
+    color:#D22131;
+    width: 50px;
+    height: 50px;
+    border:2px solid #D22131;
+}
+.swiper-button-next2{
+    left:0!important;
+}
+.swiper-button-prev2{
+    right:0!important;
+}
+/*-------------------------------------------------------------------brand slider------------------------------------------------------------------------------------*/
+.brands{
+    color:#010306;
+    padding-bottom: 10px;
+}
+.brand-container{
+    margin-top: 200px;
+}
+.swiper3{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.swiper3 li{
+    display: block;
+    width: 100%;
+    float: right;
+}
+
+/*---------------------------------------------------------------------laptops----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1280px)
+{
+    ul.parts>li.ajil-wraper{width:66.6666%;margin-top: 1px;}
+    ul.parts>li.sport-wraper{width:33.3334%;}
+    ul.parts>li.odkolon-wraper{width: 33.3334%;}
+    ul.parts>li.style-wraper, ul.parts>li.digital-wraper{width:50%;}
+    .swiper-pagination-bullet{
+        background-color: white;
+        width:15px;
+        height:15px;
+    }
+    .swiper2{
+        width:80%;
+    }
+    .swiper3{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+}
+/*-----------------------------------------------------------------------tablets------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px)
+and (max-width: 1279px){
+    ul.parts>li{width: 50%;}
+    ul.parts>li.digital-wraper{float: none;margin: auto;}
+    :root {
+        --swiper-navigation-size: 35px;
+    }
+    .swiper2{
+        width:80%;
+    }
+    .swiper-button-next2,.swiper-button-prev2{
+        color:black;
+        width: 40px;
+        height: 40px;
+        border:2px solid black;
+    }
+    .swiper3{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    .headline-wrapper p{
+        font-size:1.2em;
+        line-height: 30px;
+        max-width: 80%;
+    }
+    .headline-wrapper {
+        margin-right: 5%;
+    }
+
+
+}
+/*-------------------------------------------------------------------------mobiles------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 767px){
+    :root {
+        --swiper-navigation-size: 30px;
+    }
+    .swiper2{
+        width:100%;
+    }
+    .swiper-button-next2,.swiper-button-prev2{
+        display:none;
+    }
+    .swiper3{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .headline-wrapper {
+        margin-right: 4%;
+    }
+    .headline-wrapper p{
+        font-size:1.2em;
+        line-height: 30px;
+        max-width: 90%;
+    }
+
+}
+
+
+
