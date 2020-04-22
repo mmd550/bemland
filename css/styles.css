@@ -26,7 +26,6 @@ a{
 }
 img{
     width:100%;
-    object-fit: cover;
     height: 100%;
 }
 :root {
@@ -395,6 +394,17 @@ and (max-width: 1279px){
         font-size:1.2em;
         line-height: 30px;
         max-width: 90%;
+    }
+    .headline-wrapper{
+        margin-right: 10%;
+        max-width: 85%;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .headline-wrapper p{
+        font-size:1.2em;
+        line-height: 30px;
+        max-width: 100%;
     }
 
 }
