@@ -245,16 +245,17 @@ div.background{
 }
 .discount-percent{
     background-color: red;
-    border-radius:45%;
+    border-radius:42%;
     text-align: center;
     color: white;
-    font-size: 0.8em;
-    padding: 4px 8px 4px 8px;
+    font-size: 1em;
+    padding: 1px 5px 1px 5px;
 }
 .previous-price{
     text-decoration: line-through;
     opacity: 60%;
     font-size: 0.8em;
+    padding-left: 4px;
 }
 .unit{
     font-size: 0.8em;
