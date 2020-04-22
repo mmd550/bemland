@@ -183,15 +183,8 @@ div.brand-subtitle p{
     opacity:0;
     line-height: 30px;
     max-width: 400px;
-    /*transition:opacity .5s ease-out;*/
 }
-/*ul.parts>li:hover div.brand-subtitle p{*/
-/*    opacity: 100%;*/
-/*}*/
-ul.parts>li:hover div.brand-subtitle{
-    height:105px;
-    background-color: rgba(0,0,0,0.8);
-}
+
 
 div.brand-subtitle span{
     font-size: 1.7em;
@@ -264,7 +257,7 @@ div.background{
 }
 .unit{
     font-size: 0.8em;
-    padding-right:2px ;
+    padding-right:0 ;
 }
 .swiper-button-next2,.swiper-button-prev2{
     color:#D22131;
@@ -319,10 +312,17 @@ div.background{
         margin-right: auto;
         margin-top: 30px;
     }
+    ul.parts>li:hover div.brand-subtitle{
+        height:105px;
+        background-color: rgba(0,0,0,0.8);
+    }
 }
 /*-----------------------------------------------------------------------tablets------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 768px)
 and (max-width: 1279px){
+    body{
+        font-size:15px;
+    }
     ul.parts>li{width: 50%;}
     ul.parts>li.digital-wraper{float: none;margin: auto;}
     :root {
@@ -356,13 +356,13 @@ and (max-width: 1279px){
 }
 /*-------------------------------------------------------------------------mobiles------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 767px){
-      body{
+    body{
         font-size:14px;
     }
     :root {
         --swiper-navigation-size: 30px;
     }
-       div.brand-subtitle p{
+    div.brand-subtitle p{
         font-size: 1.2em;
         opacity:0;
         line-height: 30px;
