@@ -235,10 +235,9 @@ div.background{
 }
 .swiper-slide p{
     line-height: 1.5em;
-
 }
 .swiper-slide span{
-    margin-right:10px;
+    margin-right:0px;
     margin-left: 0;
 }
 .discount-percent{
@@ -372,7 +371,6 @@ and (max-width: 1279px){
         opacity:0;
         line-height: 30px;
         max-width: 100%;
-        /*transition:opacity .5s ease-out;*/
     }
     .swiper2{
         width:100%;
@@ -396,14 +394,10 @@ and (max-width: 1279px){
         max-width: 90%;
     }
     .headline-wrapper{
-        margin-right: 5%;
-        max-width: 90%;
-        margin-top: 40px;
-        margin-bottom: 50px;
-    }
+             margin-right:5%;
+             max-width: 90%;
+         }
     .headline-wrapper p{
-        font-size:1.2em;
-        line-height: 30px;
         max-width: 100%;
     }
 
