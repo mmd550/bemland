@@ -75,25 +75,20 @@ li.bar:first-child{
 li.bar{
     display: inline-block;
     cursor: pointer;
-    margin-top: 3px;
+    margin-top: 5px;
     padding-right: 0.7%;
     padding-left: 0.7%;
     position: relative;
 }
-li.bar::after{
-    background-color: #79B9B9;
-    content: '';
+li.bar:hover .dark{
+    display: none;
+}
+li.bar:hover .light{
     display: block;
-    position: relative;
-    margin: auto;
-    width: 0;
-    height: 2px;
-    transition: width 400ms;
 }
-li.bar:hover::after{
-    width: 100%;
+li.bar .light{
+    display: none;
 }
-
 
 .mainLogo{
     position: absolute;
