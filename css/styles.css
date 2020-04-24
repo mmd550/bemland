@@ -550,7 +550,7 @@ and (max-width: 1279px) {
     }
         li.bar {
         width: 30px;
-        padding-top: 0;
+        padding-top: 1px;
     }
 
 }
