@@ -425,6 +425,7 @@ and (max-width: 1279px){
         position: static;
         margin: auto;
         padding-top: 4px;
+        width:165px
 
 
     }
