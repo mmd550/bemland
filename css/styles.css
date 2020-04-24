@@ -448,7 +448,7 @@ and (max-width: 1279px) {
     .mainlogo {
         position: static;
         margin: auto;
-        padding-top: 8px;
+        padding-top: 6px;
         width: 140px;
 
 
