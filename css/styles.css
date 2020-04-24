@@ -96,7 +96,7 @@ li.bar .light{
     display: none;
 }
 
-.mainLogo{
+.mainlogo{
     position: absolute;
     top: 4px;
     left: 3%;
@@ -389,7 +389,7 @@ and (max-width: 1279px){
         display:none;
     }
     .swiper3{
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -409,6 +409,24 @@ and (max-width: 1279px){
          }
     .headline-wrapper p{
         max-width: 100%;
+    }
+    ul.bar .laptop{
+        display: none;
+    }
+    #catalog{
+        float: right;
+        margin-top: 6px;
+    }
+    #buybag{
+        float: left;
+        margin-left: 3%;
+    }
+    .mainlogo{
+        position: static;
+        margin: auto;
+        padding-top: 4px;
+
+
     }
 
 }
