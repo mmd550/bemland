@@ -434,9 +434,9 @@
     var mySwiper2 = new Swiper('.swiper2',{
         freeMode:true,
         slidesPerView: 2,
-        slidesPerGroup:3,
+        slidesPerGroup:4,
         spaceBetween: 10,
-        speed:400,
+        speed:300,
         navigation:{
             nextEl: '.swiper-button-next2',
             prevEl: '.swiper-button-prev2',
@@ -485,12 +485,15 @@
     var swiper = new Swiper('.swiper3',{
         loop: true,
         autoplay: {
-            delay:30,
+            delay:0,
         },
         slidesPerGroup:1,
         speed:3000,
         slidesPerView: 4,
         spaceBetween: 2,
+        slideToClickedSlide: true,
+        preventClicksPropagation: false,
+        preventClicks: false,
         simulateTouch:false,
         breakpoints: {
             414:{
