@@ -522,6 +522,9 @@ and (max-width: 1279px) {
     .headline-wrapper p {
         max-width: 100%;
     }
+    ul.bar{
+    height:40px;
+    }
 
     ul.bar .laptop {
         display: none;
@@ -540,14 +543,14 @@ and (max-width: 1279px) {
     .mainlogo {
         position: static;
         margin: auto;
-        padding-top: 8px;
+        padding-top: 3px;
         width: 140px;
 
 
     }
         li.bar {
         width: 30px;
-        padding-top: 5px;
+        padding-top: 0;
     }
 
 }
