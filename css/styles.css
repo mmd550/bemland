@@ -1,165 +1,194 @@
 @import url(normalize.css);
+
 @font-face {
     font-family: BYekan;
     src: url(../fonts/BYekan.eot) format('eot'),
     url(../fonts/BYekan.woff) format('woff'),
     url(../fonts/BYekan.ttf) format('truetype');
 }
-body{
-   position: relative;
+
+body {
+    position: relative;
     direction: rtl;
     background-color: #F5F5F5;
-    font-size:16px;
+    font-size: 16px;
     font-family: BYekan;
 }
-a{
-    text-decoration:none;
-    color:inherit;
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
-.main{
-    width:100%;
-    max-width:1680px;
-    margin:auto;
+
+.main {
+    width: 100%;
+    max-width: 1680px;
+    margin: auto;
 }
-.clear{
+
+.clear {
     clear: both;
 }
-img{
-    width:100%;
+
+img {
+    width: 100%;
 }
+
 :root {
     --swiper-navigation-size: 30px;
 }
-h1{
+
+h1 {
     display: inline-block;
-    color:black;
+    color: black;
     font-size: 2em;
     line-height: 50px;
 }
 
-h2{
+h2 {
     color: white;
     font-size: 2em;
     text-align: center;
-    padding:24px;
+    padding: 24px;
 }
-footer{
+
+footer {
     background-color: #010306;
     height: 300px;
     width: 100%;
     margin-top: 50px;
 }
+
 /*------------------------------------------------------------navigation---------------------------------------------------------------------------------------*/
-nav{
-    background-color: rgba(1,3,6,0.8);
-    position:fixed;
-    top:0;
+nav {
+    background-color: rgba(1, 3, 6, 0.8);
+    position: fixed;
+    top: 0;
     z-index: 9999;
-    width:100%;
+    width: 100%;
 }
-ul.bar{
+
+ul.bar {
     height: 45px;
     position: relative;
 
 }
-div.extra{
-    height:45px;
+
+div.extra {
+    height: 45px;
     background-color: #010306;
 }
-li.bar{
+
+li.bar {
     display: inline-block;
     cursor: pointer;
     /*margin-top: 5px;*/
     padding-right: 0.7%;
     padding-left: 0.7%;
     position: relative;
-    width:35px;
+    width: 35px;
     padding-top: 4px;
 }
-li.bar:first-child{
+
+li.bar:first-child {
     margin-right: 3%;
 }
-#catalog img{
+
+#catalog img {
     cursor: pointer;
-    padding-bottom:4px;
+    padding-bottom: 4px;
 }
-li.bar:hover .dark{
-    display: none;
-}
-li.bar:hover .light{
-    display: block;
-}
-li.bar .dark{
-    width: 100%;
-}
-li.bar .light{
+
+li.bar:hover .dark {
     display: none;
 }
 
-.mainlogo{
+li.bar:hover .light {
+    display: block;
+}
+
+li.bar .dark {
+    width: 100%;
+}
+
+li.bar .light {
+    display: none;
+}
+
+.mainlogo {
     position: absolute;
     top: 4px;
     left: 3%;
-    width:165px;
+    width: 165px;
 }
+
 /*------------------------------------------------------homepage slider--------------------------------------------------------------------------------------------------*/
-div.slider-container{
-    margin-top:0;
+div.slider-container {
+    margin-top: 0;
     box-sizing: border-box;
-    border-top:0.2vh solid transparent;
+    border-top: 0.2vh solid transparent;
 }
+
 .swiper1 {
-    width:100%;
+    width: 100%;
     background-color: transparent;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background-color: white;
-    width:10px;
-    height:10px;
+    width: 10px;
+    height: 10px;
 }
-.swiper-button-next1,.swiper-button-prev1{
-    color:white;
+
+.swiper-button-next1, .swiper-button-prev1 {
+    color: white;
     transition: right 200ms, left 200ms;
 
 }
-.swiper-button-prev1:hover{
-    right:5px;
+
+.swiper-button-prev1:hover {
+    right: 5px;
 }
-.swiper-button-next1:hover{
-    left:5px;
+
+.swiper-button-next1:hover {
+    left: 5px;
 }
+
 /*------------------------------------------------------!*headline*!--------------------------------------------------------------------------------------------------*/
-.headline::before{
+.headline::before {
     background: #010306;
     content: "";
     display: block;
     height: 2px;
-    margin-bottom:0;
+    margin-bottom: 0;
     margin-top: 0;
     position: relative;
     width: 60px;
 }
-.headline-wrapper{
+
+.headline-wrapper {
     margin-right: 10%;
     max-width: 80%;
     margin-top: 40px;
     margin-bottom: 50px;
 }
-.headline-wrapper p{
-    font-size:1.2em;
+
+.headline-wrapper p {
+    font-size: 1.2em;
     line-height: 30px;
     max-width: 70%;
 }
+
 /*------------------------------------------------------!*parts*!--------------------------------------------------------------------------------------------------*/
-ul.parts{
+ul.parts {
     display: block;
     margin-top: 1vh;
 }
-ul.parts>li{
+
+ul.parts > li {
     display: list-item;
-    float:right;
-    margin:0;
+    float: right;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     border-left: 1px solid transparent;
@@ -168,50 +197,55 @@ ul.parts>li{
     position: relative;
     background-color: transparent;
 }
-ul.parts>li>div{
+
+ul.parts > li > div {
     background-color: transparent;
 }
-div.brand-subtitle{
-    background-color: rgba(0,0,0,0.3);
-    width:100%;
-    height:40px;
-    position:absolute;
-    bottom:5px;
+
+div.brand-subtitle {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
     color: white;
     overflow: hidden;
     transition: height 1000ms, background-color 1000ms;
     padding-right: 10px;
 }
-div.brand-subtitle p{
+
+div.brand-subtitle p {
     font-size: 1.2em;
-    opacity:0;
+    opacity: 0;
     line-height: 30px;
     max-width: 400px;
 }
 
 
-div.brand-subtitle span{
+div.brand-subtitle span {
     font-size: 1.7em;
     line-height: 40px;
 }
 
 
-
 /*------------------------------------------------------discount slider--------------------------------------------------------------------------------------------------*/
-div.background{
+div.background {
     height: 280px;
     background-color: #D22131;
     margin-top: 40px;
 }
-.swiper2{
-    width:90%;
+
+.swiper2 {
+    width: 90%;
 }
-.swiper2 .swiper-slide li{
-    width:85%;
+
+.swiper2 .swiper-slide li {
+    width: 85%;
     display: block;
     margin: auto;
-    padding-top: 10px ;
+    padding-top: 10px;
 }
+
 .swiper2 .swiper-slide {
     text-align: right;
     font-size: 1.2em;
@@ -232,163 +266,229 @@ div.background{
     -webkit-align-items: center;
     align-items: center;
 }
-.product-price{
-    float:left;
+
+.product-price {
+    float: left;
     padding-left: 0;
     padding-top: 10px;
     padding-bottom: 20px;
 }
-.swiper-slide p{
+
+.swiper-slide p {
     line-height: 1.5em;
 }
-.swiper-slide span{
-    margin-right:1px;
+
+.swiper-slide span {
+    margin-right: 1px;
     margin-left: 0;
 }
-.discount-percent{
+
+.discount-percent {
     background-color: red;
-    border-radius:42%;
+    border-radius: 42%;
     text-align: center;
     color: white;
     font-size: 1em;
     padding: 2px 5px 2px 5px;
 }
-.previous-price{
+
+.previous-price {
     text-decoration: line-through;
     opacity: 60%;
     font-size: 0.8em;
     padding-left: 4px;
 }
-.unit{
+
+.unit {
     font-size: 0.8em;
-    padding-right:0 ;
+    padding-right: 0;
 }
-.swiper-button-next2,.swiper-button-prev2{
-    color:#D22131;
+
+.swiper-button-next2, .swiper-button-prev2 {
+    color: #D22131;
     width: 50px;
     height: 50px;
-    border:2px solid #D22131;
+    border: 2px solid #D22131;
 }
-.swiper-button-next2{
-    left:0!important;
+
+.swiper-button-next2 {
+    left: 0 !important;
 }
-.swiper-button-prev2{
-    right:0!important;
+
+.swiper-button-prev2 {
+    right: 0 !important;
 }
+
 /*-------------------------------------------------------------------brand slider------------------------------------------------------------------------------------*/
-.brands{
-    color:#010306;
+.brands {
+    color: #010306;
     padding-bottom: 10px;
 }
-.brand-container{
+
+.brand-container {
     margin-top: 200px;
 }
-.swiper3{
+
+.swiper3 {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
-.swiper3 li{
+
+.swiper3 li {
     display: block;
     width: 100%;
     float: right;
 }
 
 /*---------------------------------------------------------------------laptops----------------------------------------------------------------------------------------*/
-@media screen and (min-width: 1280px)
-{
-    ul.parts>li.ajil-wraper{width:66.6666%;margin-top: 1px;}
-    ul.parts>li.sport-wraper{width:33.3334%;}
-    ul.parts>li.odkolon-wraper{width: 33.3334%;}
-    ul.parts>li.style-wraper, ul.parts>li.digital-wraper{width:50%;}
-    .swiper-pagination-bullet{
+@media screen and (min-width: 1280px) {
+    ul.parts > li.ajil-wraper {
+        width: 66.6666%;
+        margin-top: 1px;
+    }
+
+    ul.parts > li.sport-wraper {
+        width: 33.3334%;
+    }
+
+    ul.parts > li.odkolon-wraper {
+        width: 33.3334%;
+    }
+
+    ul.parts > li.style-wraper, ul.parts > li.digital-wraper {
+        width: 50%;
+    }
+
+    .swiper-pagination-bullet {
         background-color: white;
-        width:15px;
-        height:15px;
+        width: 15px;
+        height: 15px;
     }
-    .swiper2{
-        width:80%;
+
+    .swiper2 {
+        width: 80%;
     }
-    .swiper3{
+
+    .swiper3 {
         width: 75%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
     }
-    ul.parts>li:hover div.brand-subtitle{
-        height:105px;
-        background-color: rgba(0,0,0,0.8);
+
+    ul.parts > li:hover div.brand-subtitle {
+        height: 105px;
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
+
 /*-----------------------------------------------------------------------tablets------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 768px)
-and (max-width: 1279px){
-    body{
-        font-size:15px;
+and (max-width: 1279px) {
+    body {
+        font-size: 15px;
     }
-    ul.parts>li{width: 50%;}
-    ul.parts>li.digital-wraper{float: none;margin: auto;}
+
+    ul.parts > li {
+        width: 50%;
+    }
+
+    ul.parts > li.digital-wraper {
+        float: none;
+        margin: auto;
+    }
+
     :root {
         --swiper-navigation-size: 35px;
     }
-    .swiper2{
-        width:80%;
+
+    .swiper2 {
+        width: 80%;
     }
-    .swiper-button-next2,.swiper-button-prev2{
-        color:black;
+
+    .swiper-button-next2, .swiper-button-prev2 {
+        color: black;
         width: 40px;
         height: 40px;
-        border:2px solid black;
+        border: 2px solid black;
     }
-    .swiper3{
+
+    .swiper3 {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
     }
-    .headline-wrapper p{
-        font-size:1.2em;
+
+    .headline-wrapper p {
+        font-size: 1.2em;
         line-height: 30px;
         max-width: 80%;
     }
+
     .headline-wrapper {
         margin-right: 5%;
     }
 
+    #catalog {
+        float: right;
+        margin-top: 6px;
+    }
+
+    #buybag {
+        float: left;
+        margin-left: 3%;
+    }
+
+    .mainlogo {
+        position: static;
+        margin: auto;
+        padding-top: 4px;
+        width: 150px;
+    }
 
 }
+
 /*-------------------------------------------------------------------------mobiles------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 767px){
-    body{
-        font-size:14px;
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
     }
-    h1{
+
+    h1 {
         display: inline-block;
-        color:black;
+        color: black;
         font-size: 1.9em;
         line-height: 40px;
     }
+
     :root {
         --swiper-navigation-size: 30px;
     }
+
     .swiper1 {
-        width:100%;
+        width: 100%;
         background-color: transparent;
     }
-    div.brand-subtitle p{
+
+    div.brand-subtitle p {
         font-size: 1.2em;
-        opacity:0;
+        opacity: 0;
         line-height: 30px;
         max-width: 100%;
     }
-    .swiper2{
-        width:100%;
+
+    .swiper2 {
+        width: 100%;
     }
-    .swiper-button-next2,.swiper-button-prev2{
-        display:none;
+
+    .swiper-button-next2, .swiper-button-prev2 {
+        display: none;
     }
-    .swiper3{
+
+    .swiper3 {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -398,34 +498,41 @@ and (max-width: 1279px){
     .headline-wrapper {
         margin-right: 4%;
     }
-    .headline-wrapper p{
-        font-size:1.2em;
+
+    .headline-wrapper p {
+        font-size: 1.2em;
         line-height: 30px;
         max-width: 90%;
     }
-    .headline-wrapper{
-             margin-right:5%;
-             max-width: 90%;
-         }
-    .headline-wrapper p{
+
+    .headline-wrapper {
+        margin-right: 5%;
+        max-width: 90%;
+    }
+
+    .headline-wrapper p {
         max-width: 100%;
     }
-    ul.bar .laptop{
+
+    ul.bar .laptop {
         display: none;
     }
-    #catalog{
+
+    #catalog {
         float: right;
         margin-top: 6px;
     }
-    #buybag{
+
+    #buybag {
         float: left;
         margin-left: 3%;
     }
-    .mainlogo{
+
+    .mainlogo {
         position: static;
         margin: auto;
         padding-top: 4px;
-        width:165px
+        width: 140px;
 
 
     }
