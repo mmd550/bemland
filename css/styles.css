@@ -66,19 +66,22 @@ div.extra{
     height:45px;
     background-color: #010306;
 }
-li.bar:first-child{
-    display: inline-block;
-    margin-right: 2.5%;
-    cursor: pointer;
-    margin-top: 6px;
-}
 li.bar{
     display: inline-block;
     cursor: pointer;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     padding-right: 0.7%;
     padding-left: 0.7%;
     position: relative;
+    width:35px;
+    padding-top: 4px;
+}
+li.bar:first-child{
+    margin-right: 3%;
+}
+#catalog img{
+    cursor: pointer;
+    padding-bottom:4px;
 }
 li.bar:hover .dark{
     display: none;
@@ -86,14 +89,18 @@ li.bar:hover .dark{
 li.bar:hover .light{
     display: block;
 }
+li.bar .dark{
+    width: 100%;
+}
 li.bar .light{
     display: none;
 }
 
 .mainLogo{
     position: absolute;
-    top: 6px;
+    top: 4px;
     left: 3%;
+    width:165px;
 }
 /*------------------------------------------------------homepage slider--------------------------------------------------------------------------------------------------*/
 div.slider-container{
