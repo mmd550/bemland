@@ -58,10 +58,13 @@ footer {
     width: 100%;
     margin-top: 50px;
 }
+main{
+    position: relative;
+}
 
 /*------------------------------------------------------------navigation---------------------------------------------------------------------------------------*/
 nav {
-    background-color: rgba(1, 3, 6, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     z-index: 9999;
@@ -75,7 +78,7 @@ ul.bar {
 
 }
 
-div.extra {
+div.nav-back {
     height: 45px;
     background-color: #010306;
 }
@@ -122,7 +125,50 @@ li.bar .light {
     left: 3%;
     width: 165px;
 }
+/*------------------------------------------------------dashboard--------------------------------------------------------------------------------------------------*/
+.dashboard{
+    width: 100%;
+    background-color: black;
+    color: darkgrey;
+    font-size: 1.2em;
+    margin-top: 1px;
+    height:45px;
+    display: none;
 
+}
+.dashboard-wrapper{
+    padding-top:12px ;
+}
+.dashboard-slider{
+    width:80%;
+}
+
+.dashboard-slider .swiper-slide span{
+    display: block;
+    text-align: center;
+}
+.dashboard-slider .swiper-slide span:hover{
+    color:white;
+}
+
+.swiper-button-next-ds, .swiper-button-prev-ds {
+    color: darkgrey;
+    transition: right 200ms, left 200ms;
+}
+
+.swiper-button-next-ds{
+    left: 0!important;
+}
+.swiper-button-prev-ds{
+    right: 0!important;
+}
+.swiper-button-prev-ds:hover {
+    color: white;
+}
+
+.swiper-button-next-ds:hover {
+    color: white;
+}
 /*------------------------------------------------------homepage slider--------------------------------------------------------------------------------------------------*/
 div.slider-container {
     margin-top: 0;
@@ -258,9 +304,9 @@ div.background {
     top: 30%;
 }
 .whatch-all-link{
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: white;
-    opacity: 0.7;
+    opacity: 0.8;
     float: right;
     margin-top: 25px;
     margin-right: 20px;
@@ -457,7 +503,7 @@ and (max-width: 1279px) {
     }
 
     .swiper3 {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -566,7 +612,7 @@ and (max-width: 1279px) {
     ul.bar{
         height:35px;
     }
-    div.extra {
+    div.nav-back {
         height: 35px;
         background-color: #010306;
     }
