@@ -436,7 +436,13 @@
         },
     });
 
-    s('#catalog').click(function(){$('.dashboard').slideDown();})
+    $(document).ready(function () {
+        s('#catalog').click(function(){
+            $('.dashboard').slideDown();
+        })
+
+    })
+
 
 
 
