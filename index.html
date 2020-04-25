@@ -424,6 +424,7 @@
 //----------------------------------------------------------------------- navigation clicks--------------------------------------------------------------------------------------------------
 
     //----------------------------------------------------------------------- dashboard-----------------------------------------------------------------------------------------
+var callSwiper = function () {
     var myswiper4 = new Swiper('.dashboard-slider',{
         spaceBetween:10,
         touchRatio:0.1,
@@ -436,26 +437,46 @@
         },
     });
 
-    $(document).ready(function () {
-        s('#catalog').click(function(){
-            $('.dashboard').slideDown();
-        })
+}
+$(document).ready(function () {
+    $('#catalog').click(function () {
+        // $('.dashboard').slideDown();
+        $('.dashboard').animate({width:'100%'},'slow',function () {
+            $('.dashboard-wrapper').fadeTo('slow',1);
+            callSwiper();
+        });
+
 
     })
-
-
-
-
-
-
-
-// $('#catalog').click(function () {
-//             var dashboard = $('<ul></ul class="dashboard">')
-//             $('main').animate({top:'50px'},"slow");
-//
-//
-//
+})
+// $(document).ready(function () {
+//     $('#catalog').click(function () {
+//         $('.dashboard').slideDown();
+//         callSwiper();
 //     })
+// })
+
+
+
+
+
+    // // $(document).ready(function () {
+    //     $('#catalog').click(function () {
+    //         $('main').animate({top:'45px'},slow)
+    //
+    //     })
+    //
+    // // })
+
+
+
+
+
+
+
+
+
+
 //----------------------------------------------------------------------- search-----------------------------------------------------------------------------------------
 
 
