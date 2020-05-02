@@ -103,20 +103,15 @@ li.bar:first-child {
     padding-bottom: 4px;
 }
 
-li.bar:hover .dark {
-    display: none;
+li.bar .light{
+    opacity: 0.7;
 }
-
 li.bar:hover .light {
-    display: block;
+    opacity: 1;
 }
 
 li.bar .dark {
     width: 100%;
-}
-
-li.bar .light {
-    display: none;
 }
 
 .mainlogo {
@@ -369,7 +364,8 @@ ul.dash-list{
     border-top: 1px solid rgba(0,0,0,0.2);
 }
 .dash-sublist-main-menu{
-    padding: 20px 45px 15px 20px;
+    padding: 10px 45px 10px 20px;
+    margin-top: 15px;
     font-size: 19px;
     position: relative;
     cursor: pointer;
@@ -383,7 +379,7 @@ ul.dash-list{
 .dash-sublist-main-menu .mark{
     position: absolute;
     right: 20px;
-    top:22px;
+    top:12px;
     width: 18px;
     opacity: 0.3;
 }
