@@ -806,6 +806,10 @@ and (max-width: 1179px) {
         font-size: 1.9em;
         line-height: 40px;
     }
+    .mark{
+        font-weight: normal;
+        font-size: 23px;
+    }
 
     :root {
         --swiper-navigation-size: 30px;
