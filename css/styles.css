@@ -806,7 +806,25 @@ and (max-width: 1179px) {
         font-size: 1.9em;
         line-height: 40px;
     }
-    .mark{
+    .login-search .login{
+        width: 100%;
+        background-color: #1D1D1F;
+        height: 35px;
+    }
+    .login-search .login a div.img{
+        width: 22px;
+        position: absolute;
+        right: 20px;
+        top:6px;
+    }
+    .login-search .login a span{
+        font-size: 22px;
+        position: absolute;
+        right: 60px;
+        top:6px;
+        color: #A0A0A0;
+    }
+    .dashboard-wrapper .mark{
         font-weight: normal;
         font-size: 23px;
     }
