@@ -539,34 +539,68 @@
 //----------------------------------------------------------------------- navigation clicks--------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------------------- dashboard-----------------------------------------------------------------------------------------
+function lockScroll(){
+    $html = $('html');
+    $body = $('body');
+    var initWidth = $body.outerWidth();
+    var initHeight = $body.outerHeight();
+
+    var scrollPosition = [
+        self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+        self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+    ];
+    $html.data('scroll-position', scrollPosition);
+    $html.data('previous-overflow', $html.css('overflow'));
+    $html.css('overflow', 'hidden');
+    window.scrollTo(scrollPosition[0], scrollPosition[1]);
+
+    var marginR = $body.outerWidth()-initWidth;
+    var marginB = $body.outerHeight()-initHeight;
+    $body.css({'margin-right': marginR,'margin-bottom': marginB});
+}
+
+function unlockScroll(){
+    $html = $('html');
+    $body = $('body');
+    $html.css('overflow', $html.data('previous-overflow'));
+    var scrollPosition = $html.data('scroll-position');
+    window.scrollTo(scrollPosition[0], scrollPosition[1]);
+
+    $body.css({'margin-right': 0, 'margin-bottom': 0});
+}
 function mainMenu(){
     $('.dashboard-wrapper .dash-sublist-main-menu ').parent().animate({right:'-100%'})
     $('.dashboard-wrapper .dash-1st-list').animate({right:'0'})
 }
-$('nav #catalog').click(function () {
-    $('.dashboard-background').fadeIn();
-    $('.dashboard-wrapper').animate({right:'0'});
-    $('div.dash-close').fadeIn()
-})
-$('.dashboard-background , .dash-close').click(function () {
-    $('.dashboard-background').fadeOut();
-    $('.dashboard-wrapper').animate({right:'-370'});
-    $('div.dash-close').fadeOut()
-    mainMenu()
+$(document).ready(function () {
+    $('nav #catalog').click(function () {
+        $('.dashboard-background').fadeIn();
+        $('.dashboard-wrapper').animate({right:'0'});
+        $('div.dash-close').fadeIn()
+        lockScroll()
+    })
+    $('.dashboard-background , .dash-close').click(function () {
+        $('.dashboard-background').fadeOut();
+        $('.dashboard-wrapper').animate({right:'-370'});
+        $('div.dash-close').fadeOut()
+        mainMenu()
+        unlockScroll()
 
-})
+    })
 
 
-$('.dashboard-wrapper .dash-1st-sublist-item ').click(function () {
-    if($(this).is('[data-sublistClass]')){
-        $('.dashboard-wrapper .dash-1st-list').animate({right:'100%'})
-        var sublistClass = $(this).attr('data-sublistClass')
-        $('.dashboard-wrapper'+' .'+sublistClass).animate({right:'0'})
-    }
+    $('.dashboard-wrapper .dash-1st-sublist-item ').click(function () {
+        if($(this).is('[data-sublistClass]')){
+            $('.dashboard-wrapper .dash-1st-list').animate({right:'100%'})
+            var sublistClass = $(this).attr('data-sublistClass')
+            $('.dashboard-wrapper'+' .'+sublistClass).animate({right:'0'})
+        }
+    })
+    $('.dashboard-wrapper .dash-sublist-main-menu ').click(function () {
+        mainMenu()
+    })
 })
-$('.dashboard-wrapper .dash-sublist-main-menu ').click(function () {
-    mainMenu()
-})
+
 
 //----------------------------------------------------------------------- search-----------------------------------------------------------------------------------------
 function searchIn() {
@@ -591,15 +625,18 @@ function searchOut() {
     $('.mainlogo').fadeTo(600,1)
 };
 
-$('#search').click(function () {
-    searchIn();
-});
-$('#search-out-button').click(
-    function () {
-        searchOut()
+$(document).ready(function () {
+    $('#search').click(function () {
+        searchIn();
+    });
+    $('#search-out-button').click(
+        function () {
+            searchOut()
 
-    }
-)
+        }
+    )
+
+})
 
 
 
