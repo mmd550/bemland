@@ -24,8 +24,8 @@
 <!--------------------------------------------------------------------------------navigation------------------------------------------------------------------------------------------------------------------------>
 <nav>
     <div class="search-field main">
-        <button id="search-button"><img class="dark" src="vectors/search.png" alt=""><img class="light" src="vectors/search-light.png" alt=""></button>
-        <input type="text" placeholder="جستجو در بملند...">
+        <button class="search-button"><img class="dark" src="vectors/search.png" alt=""><img class="light" src="vectors/search-light.png" alt=""></button>
+        <input class="search-input" type="text" placeholder="جستجو در بملند...">
         <button id="search-out-button"><img class="dark" src="vectors/out.png" alt=""><img class="light" src="vectors/out-light.png" alt=""></button>
     </div>
     <ul class="main bar">
@@ -39,108 +39,133 @@
 <div class="nav-back">
 </div>
 <!--------------------------------------------------------------------------------dashboard------------------------------------------------------------------------------------------------------------------------>
-<!--<div class="dashboard">-->
-<!--    <div class="main dashboard-wrapper">-->
-<!--        <div class="swiper-container dashboard-slider">-->
-<!--            <div class="swiper-wrapper">-->
-<!--                <div class="swiper-slide"><span><a href="">دیجیتال</a></span></div>-->
-<!--                <div class="swiper-slide"><span><a href="">مد و پوشاک</a>  </span></div>-->
-<!--                <div class="swiper-slide"><span> <a href="">خانه و آشپزخانه</a></span></div>-->
-<!--                <div class="swiper-slide"><span><a href="">خوردنی و آشامیدنی </a></span></div>-->
-<!--                <div class="swiper-slide"><span><a href="">آرایشی و بهداشتی </a></span></div>-->
-<!--                <div class="swiper-slide"><span> <a href="">فلان و بهمان</a></span></div>-->
-<!--                <div class="swiper-slide"><span><a href="">فلان و بهمان</a></span></div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
-<!--            <div class="swiper-button-prev swiper-button-prev-ds"></div>-->
-<!--            <div class="swiper-button-next swiper-button-next-ds"></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="dashboard-sublist-wrapper">-->
-<!--    <ul data-listTitle="digital">-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--        <li class="sublist-title">موبایل</li>-->
-<!--        <li class="sublist-item">اپل</li>-->
-<!--        <li class="sublist-item">شیاومی</li>-->
-<!--        <li class="sublist-item">سامسونگ</li>-->
-<!--        <li class="sublist-item">سونی</li>-->
-<!--        <li class="sublist-title">لوازم جانبی</li>-->
-<!--        <li class="sublist-item">هندزفری</li>-->
-<!--        <li class="sublist-item">شارژر</li>-->
-<!--        <li class="sublist-item">قاب</li>-->
-<!--        <li class="sublist-item">باتری</li>-->
-<!--    </ul>-->
-<!--</div>-->
+<div class="dashboard-background"></div>
+<div class="dash-close"><img class="dark" src="vectors/out-light.png" alt=""></div>
+<div class="dashboard-wrapper">
+    <div class="login-search">
+        <div class="login">
+            <a href="">
+                <div class="img">
+                    <img class="dark" src="vectors/member.png" alt="">
+                </div>
+                <span>سلام، وارد شوید</span>
+            </a>
+        </div>
+        <div class="search">
+            <button class="search-button"><img class="dark" src="vectors/search.png" alt=""><img class="light" src="vectors/search-light.png" alt=""></button>
+            <input class="search-input" type="text" placeholder="جستجو در بملند...">
+        </div>
+    </div>
+    <div class="catalog">
+        <ul class="dash-1st-list">
+            <li class="dash-1st-sublist-header">
+                <span>دسته بندی ها</span>
+            </li>
+            <li class="dash-1st-sublist-item dash-1st-sublist-item-1" data-sublistClass="dash-fashion">
+                <div>
+                    <span class="text">مد و پوشاک</span>
+                    <span class="mark"> > </span>
+                </div>
+
+            </li>
+            <li class="dash-1st-sublist-item">
+                <div>
+                    <span class="text">آجیل و خشکبار</span>
+                    <span class="mark"> > </span>
+                </div>
+
+            </li>
+            <li class="dash-1st-sublist-item">
+                <div>
+                    <span class="text">آرایشی و بهداشتی</span>
+                    <span class="mark"> > </span>
+                </div>
+            </li>
+            <li class="dash-1st-sublist-item">
+                <div>
+                    <span class="text">دیجیتال</span>
+                    <span class="mark"> > </span>
+                </div>
+            </li>
+            <li class="dash-1st-sublist-item">
+                <div>
+                    <span class="text">خانه و آشپزخانه</span>
+                    <span class="mark"> > </span>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="dash-list dash-fashion">
+            <li class="dash-sublist-main-menu">
+                <span class="mark"><</span>
+                <span class="text">منوی اصلی</span>
+            </li>
+            <li class="dash-sublist-header">
+                <a href="">
+
+                    کفش
+
+                </a>
+            </li>
+            <li class="dash-sublist-item">
+                <a href="">
+
+                    دویدن
+
+                </a>
+
+
+            </li>
+            <li class="dash-sublist-item">
+                <a href="">
+
+                    کوهنوردی
+
+                </a>
+            </li>
+            <li class="dash-sublist-item">
+                <a href="">
+
+                    پیاده روی
+
+                </a>
+
+            </li>
+            <li class="dash-sublist-item">
+                <a href="">
+
+                    روزانه
+
+                </a>
+
+            </li>
+            <li class="dash-sublist-header">
+                <a href="">
+
+                    ساعت
+
+                </a>
+
+            </li>
+            <li class="dash-sublist-item">
+                <a href="">
+
+                    رسمی
+
+                </a>
+
+            </li>
+            <li class="dash-sublist-item">
+                <a href="">
+
+                    روزمره
+
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
 
 
 <!--------------------------------------------------------------------------------homepage slider--------------------------------------------------------------------------------------------------------->
@@ -513,37 +538,36 @@
 <script>
 //----------------------------------------------------------------------- navigation clicks--------------------------------------------------------------------------------------------------
 
-    //----------------------------------------------------------------------- dashboard-----------------------------------------------------------------------------------------
-// var callSwiper = function () {
-//     var myswiper4 = new Swiper('.dashboard-slider',{
-//         spaceBetween:0,
-//         touchRatio:0.1,
-//         slidesPerView: 5,
-//         slidesPerGroup:3,
-//         speed:550,
-//         navigation:{
-//             nextEl: '.swiper-button-next-ds',
-//             prevEl: '.swiper-button-prev-ds',
-//         },
-//     });
-//
-// }
-//
-// $(document).ready(function () {
-//     $('#catalog').click(function () {
-//         $("nav").css("background-color", "rgba(0,0,0,1)");
-//         $('.dashboard').slideDown();
-//         $('.dashboard-wrapper').fadeTo('slow',1);
-//         callSwiper();
-//     });
-//     $('.dashboard').hover(function () {
-//         $('.dashboard-sublist-wrapper').slideDown()
-//
-//     },function () {
-//         $('.dashboard-sublist-wrapper').slideUp()
-//
-//     })
-// })
+//----------------------------------------------------------------------- dashboard-----------------------------------------------------------------------------------------
+function mainMenu(){
+    $('.dashboard-wrapper .dash-sublist-main-menu ').parent().animate({right:'-100%'})
+    $('.dashboard-wrapper .dash-1st-list').animate({right:'0'})
+}
+$('nav #catalog').click(function () {
+    $('.dashboard-background').fadeIn();
+    $('.dashboard-wrapper').animate({right:'0'});
+    $('div.dash-close').fadeIn()
+})
+$('.dashboard-background , .dash-close').click(function () {
+    $('.dashboard-background').fadeOut();
+    $('.dashboard-wrapper').animate({right:'-370'});
+    $('div.dash-close').fadeOut()
+    mainMenu()
+
+})
+
+
+$('.dashboard-wrapper .dash-1st-sublist-item ').click(function () {
+    if($(this).is('[data-sublistClass]')){
+        $('.dashboard-wrapper .dash-1st-list').animate({right:'100%'})
+        var sublistClass = $(this).attr('data-sublistClass')
+        $('.dashboard-wrapper'+' .'+sublistClass).animate({right:'0'})
+    }
+})
+$('.dashboard-wrapper .dash-sublist-main-menu ').click(function () {
+    mainMenu()
+})
+
 //----------------------------------------------------------------------- search-----------------------------------------------------------------------------------------
 function searchIn() {
     $('#catalog').fadeTo(100,0)
@@ -616,7 +640,7 @@ $('#search-out-button').click(
     var myswiper2 = new Swiper('.product-slider',{
         freeMode:true,
         freeModeMomentum:true,
-        touchRatio:1.5,
+        touchRatio:2,
         slidesPerView: 2,
         slidesPerGroup:3,
         spaceBetween: 10,
@@ -639,16 +663,18 @@ $('#search-out-button').click(
                 spaceBetween: 10,
                 slidesPerGroup:2,
             },
-            1050: {
+            1080: {
                 slidesPerView: 3,
                 spaceBetween: 35,
                 slidesPerGroup:2,
-                touchRatio:1,
+                touchRatio:0.1,
+                freeMode: false,
             },
             1200: {
                 slidesPerView: 3.2,
                 spaceBetween: 35,
-                touchRatio:1,
+                touchRatio:0.1,
+                freeMode: false,
             },
             1280: {
                 slidesPerView: 4,
