@@ -770,21 +770,21 @@ and (max-width: 1179px) {
 }
 .search-field input{
     right: 50%;
-    width: 420px;
+    width: 370px;
     height: 100%;
-    margin-right: -210px;
+    margin-right: -185px;
 }
 .search-field button.search-button{
     margin-top: 5px;
     position: absolute;
     right: 50%;
-    margin-right: -239px;
+    margin-right: -214px;
 }
 .search-field button#search-out-button{
     margin-top: 5px;
     position: absolute;
     right: 50%;
-    margin-right: 239px;
+    margin-right: 170px;
 }   
 /*-------------------------------------------------------------------------main slider------------------------------------------------------------------------------------------*/
 :root {
@@ -881,7 +881,7 @@ and (max-width: 1179px) {
     margin-top: 5px;
     position: absolute;
     right: 50%;
-    margin-right: 139px;
+    margin-right: 120px;
 }   
 
 
