@@ -670,17 +670,17 @@ and (max-width: 1179px) {
 .search-field input{
     right: 50%;
     width: 600px;
-    margin-right: -310px;
+    margin-right: -300px;
 }
 .search-field button.search-button{
     margin-top: 10px;
     right: 50%;
-    margin-right: -350px;
+    margin-right: -329px;
 }
 .search-field button#search-out-button{
     margin-top: 10px;
     right: 50%;
-    margin-right: 300px;
+    margin-right: 320px;
 }
 /*-------------------------------------------------------------------------parts------------------------------------------------------------------------------------------*/
     ul.parts > li {
@@ -770,21 +770,21 @@ and (max-width: 1179px) {
 }
 .search-field input{
     right: 50%;
-    width: 300px;
+    width: 240px;
     height: 100%;
-    margin-right: -170px;
+    margin-right: -120px;
 }
 .search-field button.search-button{
     margin-top: 5px;
     position: absolute;
     right: 50%;
-    margin-right: -204px;
+    margin-right: -149px;
 }
 .search-field button#search-out-button{
     margin-top: 5px;
     position: absolute;
     right: 50%;
-    margin-right: 150px;
+    margin-right: 140px;
 }   
 /*-------------------------------------------------------------------------main slider------------------------------------------------------------------------------------------*/
 :root {
