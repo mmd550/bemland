@@ -770,21 +770,21 @@ and (max-width: 1179px) {
 }
 .search-field input{
     right: 50%;
-    width: 220px;
+    width: 420px;
     height: 100%;
-    margin-right: -110px;
+    margin-right: -210px;
 }
 .search-field button.search-button{
     margin-top: 5px;
     position: absolute;
     right: 50%;
-    margin-right: -139px;
+    margin-right: -239px;
 }
 .search-field button#search-out-button{
     margin-top: 5px;
     position: absolute;
     right: 50%;
-    margin-right: 139px;
+    margin-right: 239px;
 }   
 /*-------------------------------------------------------------------------main slider------------------------------------------------------------------------------------------*/
 :root {
@@ -856,6 +856,34 @@ and (max-width: 1179px) {
     #buybag{
         padding-top: 4px;
     }
+
+}
+/*-------------------------------------------------------------------------mini-mobiles------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 479px) {
+
+    /*-------------------------------------------------------------------------search------------------------------------------------------------------------------------------*/
+.search-field{
+    height: 35px;
+}
+.search-field input{
+    right: 50%;
+    width: 220px;
+    height: 100%;
+    margin-right: -110px;
+}
+.search-field button.search-button{
+    margin-top: 5px;
+    position: absolute;
+    right: 50%;
+    margin-right: -139px;
+}
+.search-field button#search-out-button{
+    margin-top: 5px;
+    position: absolute;
+    right: 50%;
+    margin-right: 139px;
+}   
+
 
 }
 
