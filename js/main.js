@@ -69,9 +69,8 @@ $(document).ready(function () {
 function searchIn() {
     $('#catalog').fadeTo(100,0)
     $('#buybag').fadeTo(200,0)
-    $('#membership').fadeTo(300,0)
-    $('#search').fadeTo(400,0)
-    $('.mainlogo').fadeTo(500,0)
+    $('#search').fadeTo(300,0)
+    $('.mainlogo').fadeTo(400,0)
     $('ul.bar').delay(500).fadeOut('fast',function () {
         $('.search-field').fadeIn();
         $('.search-field input').focus();
@@ -82,10 +81,9 @@ function searchOut() {
         $('ul.bar').fadeIn()
     })
     $('#catalog').fadeTo(1000,1)
-    $('#buybag').fadeTo(900,1)
-    $('#membership').fadeTo(800,1)
-    $('#search').fadeTo(700,1)
-    $('.mainlogo').fadeTo(600,1)
+    $('#buybag').fadeTo(800,1)
+    $('#search').fadeTo(600,1)
+    $('.mainlogo').fadeTo(400,1)
 };
 
 $(document).ready(function () {
