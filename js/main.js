@@ -102,12 +102,13 @@ $(document).ready(function () {
 
 
 //----------------------------------------------------------------------- main slider---------------------------------------------------------------------------------------------------------
-    var mySwiper1 = new Swiper('.swiper1', {
+    var mainSlider = new Swiper('.swiper1', {
         spaceBetween: 30,
         effect: 'fade',
         loop:'true',
         autoplay: {
             delay: 4000,
+            disableOnInteraction:false,
         },
         pagination: {
             el: '.swiper-pagination1',
@@ -123,6 +124,7 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev1',
         },
     });
+    mainSlider.mousewheel.disable();
     //----------------------------------------------------------------------- parts-----------------------------------------------------------------------------------------
     $(document).ready(function () {
         $('ul.parts>li').hover(function () {
@@ -135,7 +137,7 @@ $(document).ready(function () {
     })
     //--------------------------------------- product-slider---------------------------------------------------
 
-    var myswiper2 = new Swiper('.product-slider',{
+    var productSlider = new Swiper('.product-slider',{
         freeMode:true,
         freeModeMomentum:true,
         touchRatio:2,
@@ -197,10 +199,11 @@ $(document).ready(function () {
         }
     });
  //------------------------------------------------------------------------------------------ brand slider---------------------------------------------------------------------------------------------------
-    var swiper = new Swiper('.swiper3',{
+    var brandSlider = new Swiper('.swiper3',{
         loop: true,
         autoplay: {
-            delay:0,
+            delay:0.1,
+            disableOnInteraction:false,
         },
         slidesPerGroup:1,
         speed:3000,
