@@ -1,0 +1,147 @@
+@import url(normalize.css);
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan.eot) format('eot'),
+    url(../fonts/BYekan.woff) format('woff'),
+    url(../fonts/BYekan.ttf) format('truetype');
+}
+body {
+    position: relative;
+    direction: rtl;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    font-family: BYekan;
+}
+a{
+    text-decoration: none;
+    color: #0066C0;
+}
+img{
+    width: 100%;
+    background-color: transparent;
+}
+.mainlogo {
+    width: 166px;
+    display: block;
+    position: relative;
+    background-color: transparent;
+    right: 50%;
+    margin:20px -83px 0 ;
+}
+div.main{
+    width:350px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+form{
+    width:100%;
+    font-family: BYekan;
+    background-color: transparent;
+    padding: 10px 0 20px 0;
+    
+}
+h1 {
+    display: inline-block;
+    color: rgba(0,0,0,1);
+    font-size: 1.6em;
+    line-height: 50px;
+    margin-right: 25px;
+    font-weight: 550;
+}
+label{
+    text-align: right;
+    font-size: 1.2em;
+    color: rgba(0,0,0,1);
+}
+label,input{
+    display: block;
+    margin: auto;
+    width: 300px;
+    margin-top:10px;
+    
+}
+input{
+    height: 40px;
+}
+input:-moz-placeholder {
+    text-align: right;
+    font-family: BYekan;
+}
+input:-ms-input-placeholder {
+    text-align: right;
+    font-family: BYekan;
+}
+input::-webkit-input-placeholder {
+    text-align: right;
+    font-family: BYekan;
+}
+input.input-text{
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 2px 10px 2px 10px;
+    direction: ltr;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: rgba(0,0,0,0.7);
+    transition: box-shadow 200ms;
+}
+input.input-text:focus{
+    box-shadow:0px 0px 5px #bb943b;
+}
+div.privacy-accept{
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: right;
+}
+input.form-submit{
+    appearance: none;
+    -webkit-appearance: none;
+    border: solid 1px #D5AC43 ;
+    padding-top:6px;
+    font-size: 1.1em;
+    color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: none;
+    background-image: linear-gradient(#F7DFA0, #F1C24C);
+    margin-top: 20px;
+    height: 45px;
+    transition: box-shadow 200ms;
+}
+input.form-submit:hover{
+    background-color: #F1C24C;
+    background-image: none;
+}
+input.form-submit:active{
+    box-shadow:0px 0px 7px #bd953b;
+}
+div.divider{
+    height: 44px;
+    background:-webkit-linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    background:linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    margin-bottom:-18px;
+}
+div.divider::after{
+    background:-webkit-linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    background:linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    content:"";
+    display:block;
+    width:100%;
+    height:44px;
+
+}
+div.already-have .text{
+    width: 300px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+footer{
+    background-color: transparent;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 100px;
+    height: 300px;
+}
