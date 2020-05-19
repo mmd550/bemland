@@ -9,6 +9,7 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/modernizr-3.8.0.min.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/validate.js"></script>
     <!--[if lt IE 9]>
     <script src="assets/html5shiv.js"></script>
     <![endif]-->
@@ -18,12 +19,19 @@
     <a class="mainlogo" href="index.html"><img  src="vectors/bemlandlogo-shadow.svg" alt=""></a>
 </nav>
 <div class="main">
-<form name="register" action="">
+<form id="register" name="register" action="proccess.php">
+
     <h1>ثبت نام در بملند</h1>
-    <label  for="login-mobile">شماره موبایل</label>
-    <input id='login-mobile' class="input-text" type="text">
-    <label for="login-password">کلمه عبور</label>
-    <input id='login-password' class="input-text" placeholder="  حداقل 6 کاراکتر " type="password">
+
+    <label  for="register-name">نام </label>
+    <input id='register-name' data-fname="نام " data-vld="minlen_3|maxlen_15|name" data-err-class="name"  class="input-text" placeholder="به انگلیسی وارد نمایید" type="text">
+
+    <label  for="register-mobile">شماره موبایل</label>
+    <input id='register-mobile' data-fname="شماره موبایل" data-vld="mobileNumber" data-err-class="mobile"  class="input-text" type="text">
+
+    <label for="register-password">کلمه عبور</label>
+    <input id='register-password' data-fname="رمز عبور" data-vld="password|minlen_6|maxlen_15" data-err-class="password" class="input-text"  placeholder="حداقل 6 کاراکتر" type="password">
+
     <div class="privacy-accept">با ادامه ی فرایند ثبت نام شما با <a href="">حریم خصوصی</a> و <a href="">شرایط و قوانین</a> استفاده از سایت بملند موافقت کرده اید.</div>
     <input class="form-submit" type="submit" value="ثبت نام در بملند">
 </form>
@@ -35,5 +43,9 @@
 <footer>
 
 </footer>
+<script src="js/jquery.mfvalidate.js"></script>
+<script>
+    $("form").mfValidate()
+</script>
 </body>
 </html>
