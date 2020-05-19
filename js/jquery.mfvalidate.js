@@ -7,11 +7,11 @@
             fieldErrorClassAttr: "data-err-class"
         }, userOptions);
 
-        var passwordRegex=/([a-z 0-9 A-z !@#$%^&]+)/;
-        var mobileRegex=/(09|9)[0-3 9][0-9](\d){7}/;
-        var emailRegex = /([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})/i;
-        var urlRegex = /(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/;
-        var nameRegex = /([a-z A-z]+)/;
+        var passwordRegex=/^[a-z 0-9 A-z !@#$%^&]+$/;
+        var mobileRegex=/^(09|9)[0-3 9][0-9](\d){7}$/;
+        var emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i;
+        var urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+        var nameRegex = /^[a-zA-Z ]+$/;
 
         var startWith = function (str, prefix) {
             return (str.slice(0, prefix.length) == prefix);
