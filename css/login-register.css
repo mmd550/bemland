@@ -37,6 +37,7 @@ div.main{
     border-radius: 5px;
 }
 form{
+    position: relative;
     width:100%;
     font-family: BYekan;
     background-color: transparent;
@@ -55,7 +56,7 @@ label{
     text-align: right;
     font-size: 1.2em;
     color: rgba(0,0,0,1);
-    margin-top: 20px !important;
+    margin-top: 25px !important;
 }
 label,input{
     display: block;
@@ -97,6 +98,7 @@ div.privacy-accept{
     margin: auto;
     margin-top: 20px;
     text-align: right;
+    font-size: 1.2em;
 }
 input.form-submit{
     appearance: none;
@@ -156,4 +158,5 @@ footer{
     font-size: 0.9em;
     color: red;
     line-height:19px;
+
 }
