@@ -24,13 +24,14 @@
     <h1>ثبت نام در بملند</h1>
 
     <label  for="register-name">نام </label>
-    <input id='register-name' data-fname="نام " data-vld="minlen_3|maxlen_30|name" data-err-class="name"  class="input-text" placeholder="به انگلیسی وارد نمایید" type="text">
+    <input id='register-name' data-fname="نام" data-vld="minlen_3|maxlen_30|name" data-err-class="name"  class="input-text" placeholder="به انگلیسی وارد نمایید" type="text">
 
     <label  for="register-mobile">شماره موبایل</label>
     <input id='register-mobile' data-fname="شماره موبایل" data-vld="mobileNumber" data-err-class="mobile"  class="input-text" type="text">
 
-    <label for="register-password">کلمه عبور</label>
-    <input id='register-password' data-fname="رمز عبور" data-vld="password|minlen_6|maxlen_15" data-err-class="password" class="input-text"  placeholder="حداقل 6 کاراکتر" type="password">
+    <label  for="register-password">کلمه عبور</label>
+    <input id='register-password' data-fname="کلمه عبور" data-vld="password|minlen_6|maxlen_15" data-err-class="password" class="input-text"  placeholder="حداقل 6 کاراکتر" type="password">
+
 
     <div class="privacy-accept">با ادامه ی فرایند ثبت نام شما با <a href="">حریم خصوصی</a> و <a href="">شرایط و قوانین</a> استفاده از سایت بملند موافقت کرده اید.</div>
     <input class="form-submit" type="submit" value="ثبت نام در بملند">
@@ -47,7 +48,6 @@
    $(document).ready(function () {
        $("form").mfValidate();
        $("#register-name").focus();
-
    })
 </script>
 </body>
