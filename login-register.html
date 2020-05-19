@@ -9,7 +9,7 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/modernizr-3.8.0.min.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/validate.js"></script>
+    <script src="js/jquery.mfvalidate.js"></script>
     <!--[if lt IE 9]>
     <script src="assets/html5shiv.js"></script>
     <![endif]-->
@@ -24,7 +24,7 @@
     <h1>ثبت نام در بملند</h1>
 
     <label  for="register-name">نام </label>
-    <input id='register-name' data-fname="نام " data-vld="minlen_3|maxlen_15|name" data-err-class="name"  class="input-text" placeholder="به انگلیسی وارد نمایید" type="text">
+    <input id='register-name' data-fname="نام " data-vld="minlen_3|maxlen_30|name" data-err-class="name"  class="input-text" placeholder="به انگلیسی وارد نمایید" type="text">
 
     <label  for="register-mobile">شماره موبایل</label>
     <input id='register-mobile' data-fname="شماره موبایل" data-vld="mobileNumber" data-err-class="mobile"  class="input-text" type="text">
@@ -43,9 +43,12 @@
 <footer>
 
 </footer>
-<script src="js/jquery.mfvalidate.js"></script>
 <script>
-    $("form").mfValidate()
+   $(document).ready(function () {
+       $("form").mfValidate();
+       $("#register-name").focus();
+
+   })
 </script>
 </body>
 </html>
