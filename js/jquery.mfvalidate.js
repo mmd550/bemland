@@ -107,7 +107,14 @@
                         }
                         if(field.val()===""){
                             var emptyErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "empty" );
-                            emptyErrorDiv.html(fName+" را وارد نمایید");
+                            var randYou = 6*Math.random();
+                            var you="";
+                            if (randYou>3){
+                                you="تان وارد نشده است";
+                            }else {
+                                you=" خود را وارد نمایید";
+                            }
+                            emptyErrorDiv.html(fName+ you);
                             $(this).after(emptyErrorDiv);
                             errors.push("error");
                             break;
