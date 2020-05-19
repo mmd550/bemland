@@ -114,7 +114,7 @@
                             }else {
                                 you=" خود را وارد نمایید";
                             }
-                            emptyErrorDiv.html(fName+ you);
+                            emptyErrorDiv.html("! " + fName+ you);
                             $(this).after(emptyErrorDiv);
                             errors.push("error");
                             break;
@@ -122,35 +122,35 @@
                         if (vldStr === "email") {
                             if(!emailRegex.test(field.val())){
                                 var emailErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "email" );
-                                emailErrorDiv.html(fName +" نامعتبر است");
+                                emailErrorDiv.html("! " + fName +" نامعتبر است");
                                 $(this).after(emailErrorDiv);
                                 errors.push("error");
                             }
                         } else if (vldStr === "url") {
                             if(!urlRegex.test(field.val())){
                                 var urlErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "url" );
-                                urlErrorDiv.html(fName+" نامعتبر است");
+                                urlErrorDiv.html("! " + fName+" نامعتبر است");
                                 $(this).after(urlErrorDiv);
                                 errors.push("error");
                             }
                         }else if (vldStr === "name") {
                             if(!nameRegex.test(field.val())){
                                 var nameErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "name" );
-                                nameErrorDiv.html(fName+" نامعتبر است");
+                                nameErrorDiv.html("! " + fName+" نامعتبر است");
                                 $(this).after(nameErrorDiv);
                                 errors.push("error");
                             }
                         } else if (vldStr === "password") {
                             if (!passwordRegex.test(field.val())) {
                                 var passErrorDiv = $("<div>").addClass(options.errorDivMainClass + " " + errClass + "password");
-                                passErrorDiv.html(fName + " فقط میتواند شامل حروف لاتین، اعداد و کاراکتر های " + "( ! , @ , # , $ , % , ^ , & ) "+" باشد");
+                                passErrorDiv.html("! " + fName + " فقط میتواند شامل حروف لاتین، اعداد و کاراکتر های " + "( ! , @ , # , $ , % , ^ , & ) "+" باشد");
                                 $(this).after(passErrorDiv);
                                 errors.push("error");
                             }
                         }else if (vldStr === "mobileNumber") {
                             if (!mobileRegex.test(field.val())) {
                                 var mobileErrorDiv = $("<div>").addClass(options.errorDivMainClass + " " + errClass + "mobile");
-                                mobileErrorDiv.html(fName + " نامعتبر است");
+                                mobileErrorDiv.html("! " + fName + " نامعتبر است");
                                 $(this).after(mobileErrorDiv);
                                 errors.push("error");
                             }
@@ -158,7 +158,7 @@
                                     var len = Number(vldStr.split("_")[1]);
                                     if(field.val().length < len){
                                         var minlenErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "minlen" );
-                                        minlenErrorDiv.html(fName +" باید دارای حداقل"+" "+len+" کاراکتر باشد");
+                                        minlenErrorDiv.html("! " + fName +" باید دارای حداقل"+" "+len+" کاراکتر باشد");
                                         $(this).after(minlenErrorDiv);
                                         errors.push("error");
                                     }
@@ -166,7 +166,7 @@
                                     var len = Number(vldStr.split("_")[1]);
                                     if(field.val().length > len){
                                         var maxlenErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "maxlen" );
-                                        maxlenErrorDiv.html(fName+" باید دارای حداکثر"+" "+len+" کاراکتر باشد");
+                                        maxlenErrorDiv.html("! " + fName+" باید دارای حداکثر"+" "+len+" کاراکتر باشد");
                                         $(this).after(maxlenErrorDiv);
                                         errors.push("error");
                                     }
@@ -174,7 +174,7 @@
                                     var num = Number(vldStr.split("_")[1]); // 0:min  1:num
                                     if (Number(field.val()) < num) {
                                         var minErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "min" );
-                                        minErrorDiv.html(fName+" باید حداقل"+" "+num+" باشد");
+                                        minErrorDiv.html("! " + fName+" باید حداقل"+" "+num+" باشد");
                                         $(this).after(minErrorDiv);
                                         errors.push("error");
                                     }
@@ -182,7 +182,7 @@
                                     var num = Number(vldStr.split("_")[1]); // 0:max  1:num
                                     if (Number(field.val()) > num) {
                                         var maxErrorDiv = $("<div>").addClass(options.errorDivMainClass+" "+ errClass + "max" );
-                                        maxErrorDiv.html(fName+" باید حداکثر"+" "+num+" باشد");
+                                        maxErrorDiv.html("! " + fName+" باید حداکثر"+" "+num+" باشد");
                                         $(this).after(maxErrorDiv);
                                         errors.push("error");
                                     }
